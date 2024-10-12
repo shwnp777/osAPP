@@ -1,0 +1,6 @@
+1. Fix Login and Register to handle token and protect pages.
+2. Auth Layout and Nav
+
+##### Product Form #####
+1. Redux in forms
+2.

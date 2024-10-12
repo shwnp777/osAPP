@@ -1,0 +1,49 @@
+.rental-form-page {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding-bottom: 80px;
+}
+
+.rental-form {
+	margin: 40px 0;
+	max-width: 100%;
+	width: 600px;
+}
+
+.image-array-div {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: flex-start;
+	gap: 15px;
+	width: 100%;
+	img {
+		height: 120%;
+		width: auto;
+	}
+	.image-preview-div {
+		width: 100px;
+		height: 100px;
+		border-radius: 15px;
+		overflow: hidden;
+		position: relative;
+		.deletePhoto {
+			border: 2px solid red;
+			background-color: white;
+			color: red;
+			position: absolute;
+			width: 30px;
+			height: 30px;
+			border-radius: 50%;
+			top: 0;
+			right: 0;
+			&:hover {
+				border: 2px solid white;
+				background-color: red;
+				color: white;
+			}
+		}
+	}
+}

@@ -1,0 +1,72 @@
+{
+    "basicItemInfo": {
+      "title": "Luxury RV",
+      "description": "Sleeps 6, fully equipped",
+      "category": category.ID
+    },
+    "pricingDetails": {
+      "pricePerHalfDay": 75,
+      "pricePerDay": 150,
+      "pricePerWeek": 900,
+      "pricePerMonth": 3000,
+      "securityDeposit": 500,
+      // user ability to custom add
+      "lateFees": [{
+        "perHour": 10
+      }],
+
+    },
+     "rentalDuration": {
+      "minDays": 1,
+      "maxDays": 30
+    },
+    "locationAndDelivery": {
+      "location": "San Diego, CA",
+      "deliveryOptions": {
+        "available": true,
+        "feePerMile": 1.50
+      },
+      "pickupInstructions": "Pick up from the front porch",
+      "returnInstructions": "Return to the garage"
+    },
+    "ownerInformation": {
+      "userID": user.ID,
+    },
+    "renterRequirements": {
+      "ageRequirement": 18,
+      "experienceRequirement": "Must have experience driving RVs",
+      "licenseOrCertification": "Driver's license required",
+      "idVerification": true
+    },
+    "insuranceAndLiability": {
+      "insuranceOptions": {
+        "damageWaiver": {
+          "available": true,
+          "pricePerDay": 20
+        }
+      },
+      "liabilityTerms": "Renter is responsible for any damages beyond normal wear and tear",
+      "waivers": ["Liability waiver for RV rentals"]
+    },
+    "termsAndConditions": {
+     // user should be able to upload their own pdfs for individuals to sign. With possibly incorporating future AI to assist.
+    },
+    "paymentInformation": {
+      "paymentMethods": ["Credit card", "PayPal", "Bank transfer", venmo, cashappaa],
+      "invoiceGeneration": true
+    },
+    // add ons should be added by user and optional
+    "itemCondition": {
+      "conditionReport": "Item is in excellent condition, minor scratches on the side",
+      "photos": [
+        "url_to_photo1.jpg",
+        "url_to_photo2.jpg"
+      ],
+      "maintenanceRequirements": "Water plants daily"
+    },
+// Then have a space for category specific fields that are automatically added depending on the categoryID selected
+    categorySpecific: {
+      ...
+    }
+
+  }
